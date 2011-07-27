@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: "Helvetica", "Arial", sans-serif;
+        }
+        h1{
+            margin: 0px;
+        }
+        #header{
+            margin: 0px;
+            width: 100%;
+            background: #2B3453;
+            padding-top: 32px;
+            padding-bottom: 8px;
+            color: white;
+        }
+        #title{
+            width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #content_body{
+            margin-top: 10px;
+            width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        #background{
+            border-radius: 8px;
+        }
+        #update_div{
+            padding: 4px;
+            background: #2B3453;
+            color: white;
+            text-align: center;
+            height: 100px;
+            width: 160px;
+            border-radius: 8px;
+            position: absolute;
+            top: 0px;
+            left: -178px;
+        }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="mandelbrot.js"></script>
+    <title>Mandelbrot Set</title>
+</head>
+<body>
+<div id="header">
+    <div id="title">
+        <h1>Mandelbrot Set</h1>
+        <p>in-browser, Javascript + HTML5 canvas pixel manipulation</p><br />
+        <p>click + drag to zoom. kind of cool. don't scroll though.</p>
+    </div>
+</div>
+<div id="content_body">
+    <canvas id="background" width="700" height="400"></canvas>
+    <div id="update_div">
+    </div>
+</div>
+</body>
+</html>
